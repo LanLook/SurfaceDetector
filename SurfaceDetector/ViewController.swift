@@ -35,6 +35,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         gradientLayer = grad
         view.layer.addSublayer(grad)
         
+        
+        previewView.layer.cornerRadius  = 25
+        previewView.layer.masksToBounds = true
+        
     }
     
     override func didReceiveMemoryWarning() {

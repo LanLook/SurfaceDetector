@@ -16,6 +16,7 @@
 		CE29CD0228401C66002BD9EB /* SDetection.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CE29CD0128401C66002BD9EB /* SDetection.mlmodel */; };
 		CE29CD0428401CE3002BD9EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29CD0328401CE3002BD9EB /* SceneDelegate.swift */; };
 		CE7F67782850D48F00C8C262 /* AnimatedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F67772850D48F00C8C262 /* AnimatedGradient.swift */; };
+		CE7F677A28511D9C00C8C262 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F677928511D9C00C8C262 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		CE29CD0328401CE3002BD9EB /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../../.Trash/SceneDelegate.swift; sourceTree = "<group>"; };
 		CE29CD05284025C2002BD9EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CE7F67772850D48F00C8C262 /* AnimatedGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradient.swift; sourceTree = "<group>"; };
+		CE7F677928511D9C00C8C262 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				CE29CD0328401CE3002BD9EB /* SceneDelegate.swift */,
 				CE29CCEF28400D62002BD9EB /* ViewController.swift */,
 				CE29CCFF28401BE2002BD9EB /* VisionObjectViewController.swift */,
+				CE7F677928511D9C00C8C262 /* StartViewController.swift */,
 				CE29CD0128401C66002BD9EB /* SDetection.mlmodel */,
 				CE29CCF128400D62002BD9EB /* Main.storyboard */,
 				CE29CCF428400D63002BD9EB /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7F67782850D48F00C8C262 /* AnimatedGradient.swift in Sources */,
+				CE7F677A28511D9C00C8C262 /* StartViewController.swift in Sources */,
 				CE29CD0428401CE3002BD9EB /* SceneDelegate.swift in Sources */,
 				CE29CCF028400D62002BD9EB /* ViewController.swift in Sources */,
 				CE29CD0228401C66002BD9EB /* SDetection.mlmodel in Sources */,
