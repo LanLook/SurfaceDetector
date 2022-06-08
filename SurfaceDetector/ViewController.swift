@@ -9,7 +9,7 @@ import AVFoundation
 import Vision
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
-
+    var gradientLayer: CALayer?
     var bufferSize: CGSize = .zero
     var rootLayer: CALayer! = nil
     
@@ -29,6 +29,12 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAVCapture()
+        
+        let grad = AnimatedGradient(colors: [.init(startPoint: .darkGray, endPoint: .black), .init(startPoint: .black, endPoint: .darkGray)], duration: 5)
+        grad.startAnimation()
+        gradientLayer = grad
+        view.layer.addSublayer(grad)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -119,6 +125,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             exifOrientation = .up
         }
         return exifOrientation
+    }
+    
+    override func viewDidLayoutSubviews() {
+        
+        super.viewDidLayoutSubviews()
+        gradientLayer?.frame = view.frame
+        gradientLayer?.zPosition = -1
+        
     }
 
 
